@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import home from './images/IMG_2211_fade.png';
+import NavBar from './NavBar';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+        <NavBar />
+        <div className= "home">
+          <img className="home-img" src={home} alt="Freda"></img>
+              <div className="intro">
+                  <div className="welcome"> 
+                    <h1>Fullstack Developer</h1>
+                    <p>Welcome! I'm a fullstack software developer well versed in 
+                      React, JavaScript, CSS, HTML, Ruby on Rails and Python.
+                      Oh, and did I mention? I'm also a Photoshop enthusiast, too!    
+                    </p>
+                    <button className="get-started-btn">Learn more</button>
+                  </div>
+                  <div className="speech-bubble">
+                    <span>Hello, I'm Freda. Welcome to my portfolio!</span>
+                  </div>
+              </div>
+        </div>
+      </>
+    )
 }
 
 export default App;
