@@ -299,12 +299,11 @@ ul li {
 
 
  /* ================================================== */
- /*                       LINKS                        */
+ /*                       RESUME                       */
  /* ================================================== */
 
 
 button {
-   background-color: #2085d8;
    border: none;
    outline: none;
    margin: 0px 10px 0px 0px;
@@ -313,7 +312,7 @@ button {
    cursor: pointer;
  }
  
-a:link {
+/* a:link {
   text-decoration: none;
   color: #FFF;
 }
@@ -332,7 +331,21 @@ a:active {
   outline: none;
   border: none;
   cursor: pointer;
-}
+} */
+
+iframe {
+  /* margin-top: 20px; */
+  margin-bottom: 50px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 4px 4px 14px #000;
+  -webkit-box-shadow: 4px 4px 14px #000;
+  box-shadow: 4px 4px 14px #000;
+  width: 100%;
+  height: 800px;
+  } 
+
 
  /* ================================================== */
  /*                   MAIN CONTAINER                   */

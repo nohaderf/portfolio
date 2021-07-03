@@ -1,8 +1,14 @@
 import React from 'react';
+import { Route, Switch, NavLink } from 'react-router-dom';
+
 import home from './images/IMG_2211_fade.png';
 import NavBar from './NavBar';
 import About from './About';
 import Resume from './Resume';
+import Projects from './Projects';
+import Blog from './Blog';
+import Contact from './Contact';
+
 
 function App() {
     return (
@@ -17,7 +23,9 @@ function App() {
                       React, JavaScript, CSS, HTML, Ruby on Rails and Python.
                       Oh, and did I mention? I'm also a Photoshop enthusiast, too!    
                     </p>
-                    <button className="get-started-btn">Learn more</button>
+                    <NavLink exact to="/about">
+                      <button className="get-started-btn">Learn more</button>
+                    </NavLink>
                   </div>
                   <div className="speech-bubble">
                     <span>Hello, I'm Freda. Welcome to my portfolio!</span>
@@ -25,7 +33,24 @@ function App() {
               </div>
         </div>
         <div className="main-container">
-          <About />
+          <Switch>
+            <Route exact path="/about">
+              <About />
+            </Route>
+            <Route exact path="/resume">
+              <Resume />
+            </Route>
+            <Route exact path="/projects">
+              <Projects />
+            </Route>
+            <Route exact path="/blog">
+              <Blog />
+            </Route>
+            <Route exact path="/contact">
+              <Contact />
+            </Route>
+          </Switch>
+          
         </div>
         {/* <div className="content-div">
         
@@ -39,16 +64,7 @@ function App() {
         <div className="content-div">
           <h1>blog</h1>
         </div>
-        <div className="content-div">
-          <h1>contact</h1>
-          <p>Feel free to reach out or connect with me!</p>
-          <p className="text">
-            <span>E-mail:</span> freda.hon@gmail.com</p>
-          <p className="text">
-            <span>LinkedIn:</span> <a href="https://www.linkedin.com/in/freda-hon/">freda-hon</a></p>
-          <p className="text">
-            <span>Medium:</span> <a href="https://medium.com/@freda.hon">@freda.hon</a></p>
-        </div> */}
+  */}
         
       </>
     )
