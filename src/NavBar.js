@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
+import { NavLink } from "react-router-dom";
 import logo from './images/fh-logo.png';
-// import { NavLink , useHistory} from "react-router-dom";
-// import {LoginContext} from './Login';
 
 function NavBar(){
     const [navBar, setNavBar] = useState(false)
@@ -20,7 +19,7 @@ function NavBar(){
         <div className="nav-bar">
             <img className="logo" src={logo} alt="FH" />
             <ul>
-                <li>about</li>
+                <li><a href="about">about</a></li>
                 <li>resumé</li>
                 <li>projects</li>
                 <li>blog</li>

@@ -4,6 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #15165e;
+  color: #fff;
 }
 
 ::selection {
@@ -21,6 +22,24 @@ body {
 ::selection {
   color: orange;
   background: rgb(0, 1, 65);
+}
+
+ /* ================================================== */
+ /*                     SCROLL BAR                     */
+ /* ================================================== */
+
+
+ body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color:  rgb(15, 18, 221);
+  
 }
 
  /* ================================================== */
@@ -115,15 +134,15 @@ ul li {
   position: relative;
   display: flex;
   justify-content: center;
-  top: 80px;
-  right: -55%;
+  top: 60px;
+  right: -52%;
   font-family: 'Courier New', Courier, monospace;
-  width: 550px;
+  width: 40%;
   margin: 100px 50px;
   border-radius: 15px;
   background: rgb(0, 1, 65);
   color: rgba(255, 255, 255, 0.842);
-  padding: 25px 15px;
+  padding: 25px 25px;
   text-align: center;
   font-weight: 800;
   font-size: 1.1em;
@@ -136,30 +155,28 @@ ul li {
   position: absolute;
   border-left: 15px solid transparent;
   border-right: 15px solid rgb(0, 1, 65);
-  border-top: 15px solid rgb(0, 1, 65);
+  border-top: 35px solid rgb(0, 1, 65);
   border-bottom: 15px solid transparent;
   left: -16px;
   top: 0px;
 }
 
 .speech-bubble span {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  overflow: hidden; 
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em; 
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
-/* The typing effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
@@ -174,22 +191,112 @@ ul li {
 }
 
  /* ================================================== */
- /*                     SCROLL BAR                     */
+ /*                       ABOUT                        */
  /* ================================================== */
 
+.main-container {
+  position: relative;
+  margin: 0 0 25px 100px;
+}
 
- body::-webkit-scrollbar {
-  width: 1em;
+.main-container p {
+  font-size: 1.2em;
 }
- 
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+.main-container img {
+  max-width: 35%;
 }
- 
-body::-webkit-scrollbar-thumb {
-  background-color:  rgb(15, 18, 221);
-  
+
+.text {
+  line-height: 0.5em;
 }
+
+.text span {
+  font-weight: bold;
+}
+
+.profile-container {
+  position: relative;
+  display: flex;
+  margin-bottom: 500px;
+}
+
+.content-div {
+  position: absolute;
+  top: 20px;
+  left: 500px;
+  width: 50%;
+  line-height: 1em;
+}
+
+.content-div h1 {
+  position: relative;
+  font-size: 7em;
+  color:rgb(0, 81, 255);
+}
+
+.content-div div {
+  position: relative;
+  top: -20px;
+  line-height: 1.2em;
+}
+
+.profile-imgs {
+  position: relative;
+  width: 100%;
+  margin-top: 75px;
+}
+
+.profile-pic {
+  position: absolute;
+  top: -10px;
+  left: 100px;
+  z-index: 4;
+}
+
+.profile-blue {
+  position: absolute;
+  top: -10px;
+  left: 90px;
+  z-index: 3;
+  transform: rotate(2deg);
+  animation: shake 5s;
+  animation-iteration-count: infinite;
+}
+
+.profile-cyan {
+  position: absolute;
+  top: -15px;
+  left: 105px;
+  z-index: 1;
+  transform: rotate(-2deg);
+  animation: shake 8s;
+  animation-iteration-count: infinite;
+}
+
+.profile-orange {
+  position: absolute;
+  top: 3px;
+  left: 107px;
+  z-index: 2;
+  animation: shake 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 
  /* ================================================== */
  /*                       LINKS                        */

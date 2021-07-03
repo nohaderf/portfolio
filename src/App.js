@@ -1,6 +1,8 @@
 import React from 'react';
 import home from './images/IMG_2211_fade.png';
 import NavBar from './NavBar';
+import About from './About';
+import Resume from './Resume';
 
 function App() {
     return (
@@ -22,6 +24,32 @@ function App() {
                   </div>
               </div>
         </div>
+        <div className="main-container">
+          <About />
+        </div>
+        {/* <div className="content-div">
+        
+        </div> */}
+        {/* <div className="content-div">
+          <h1>resumé</h1>
+        </div>
+        <div className="content-div">
+          <h1>projects</h1>
+        </div>
+        <div className="content-div">
+          <h1>blog</h1>
+        </div>
+        <div className="content-div">
+          <h1>contact</h1>
+          <p>Feel free to reach out or connect with me!</p>
+          <p className="text">
+            <span>E-mail:</span> freda.hon@gmail.com</p>
+          <p className="text">
+            <span>LinkedIn:</span> <a href="https://www.linkedin.com/in/freda-hon/">freda-hon</a></p>
+          <p className="text">
+            <span>Medium:</span> <a href="https://medium.com/@freda.hon">@freda.hon</a></p>
+        </div> */}
+        
       </>
     )
 }
