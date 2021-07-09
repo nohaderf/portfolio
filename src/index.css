@@ -47,13 +47,16 @@ a:active {
 button {
    border: none;
    outline: none;
-   margin: 0px 10px 0px 0px;
+   margin: 40px 0;
+   background-color: orange;
+   font-weight: bold;
+   text-transform: uppercase;
+   border-radius: 5px;
    padding: 7px;
    color: #FFF;
    cursor: pointer;
  }
  
-
  /* ================================================== */
  /*                     SCROLL BAR                     */
  /* ================================================== */
@@ -225,14 +228,6 @@ ul {
   50% { border-color: orange; }
 }
 
-.get-started-btn {
-  margin: 40px 0;
-  background-color: orange;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-
 @media screen and (max-width: 1000px) {
   .get-started-btn {
     display: none;
@@ -385,3 +380,14 @@ iframe {
  /*                       Contact                       */
  /* ================================================== */
 
+.container-div {
+  display: flex;
+  /* flex-wrap: wrap;
+  justify-content: space-around;  */
+}
+
+.container-form {
+  margin-left: 50px;
+  justify-content: space-between;
+  width: 20%;
+}
