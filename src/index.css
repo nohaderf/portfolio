@@ -26,12 +26,10 @@ body {
 }
 
 a:link {
-  /* text-decoration: none; */
   color: #FFF;
 }
 
 a:visited {
-  /* text-decoration: none; */
   color:  #FFF;
 }
 
@@ -125,16 +123,17 @@ ul {
   font-weight: 400;
 }
 
-
  /* ================================================== */
  /*                         HOME                       */
  /* ================================================== */
 
 .home {
-  position: relative;
+  /* position: relative;
   text-align: left;
   overflow: hidden;
-  color: #fff;
+  color: #fff; */
+  /* display: flex;
+  text-align: left; */
 }
 
 .home-img {
@@ -145,6 +144,13 @@ ul {
 .intro {
   position: absolute;
   top: 5%;
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 900px) {
+  .intro {
+    display: none;
+  }
 }
 
 .welcome {
@@ -162,11 +168,11 @@ ul {
 }
 
 .speech-bubble {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
-  top: 60px;
-  right: -52%;
+  top: 340px;
+  right: -10%;
   font-family: 'Courier New', Courier, monospace;
   width: 40%;
   margin: 100px 50px;
@@ -177,6 +183,12 @@ ul {
   text-align: center;
   font-weight: 800;
   font-size: 1.1em;
+}
+
+@media screen and (max-width: 1250px) {
+  .speech-bubble {
+    display: none;
+  }
 }
 
 .speech-bubble:after {
@@ -221,9 +233,14 @@ ul {
   border-radius: 5px;
 }
 
+@media screen and (max-width: 1000px) {
+  .get-started-btn {
+    display: none;
+  }
+}
+
 .container {
   position: relative;
-  top: 600px;
   left: 10%;
 }
 
@@ -233,6 +250,9 @@ ul {
   color:rgb(0, 81, 255);
 }
 
+.container span {
+  font-weight: bold;
+}
  /* ================================================== */
  /*                       ABOUT                        */
  /* ================================================== */
@@ -241,13 +261,14 @@ ul {
 .profile-container {
   position: relative;
   display: flex;
+  margin-top: 25px;
 }
 
 .content-div {
   position: absolute;
-  top: 20px;
-  left: 40%;
-  width: 50%;
+  top: 10px;
+  left: 50%;
+  width: 40%;
   line-height: 1em;
 }
 
@@ -265,8 +286,8 @@ ul {
 
 .profile-imgs {
   position: relative;
-  width: 100%;
-  left: 3%;
+  width: 200%;
+  left: 10%;
 }
 
 .profile-pic {
@@ -276,7 +297,7 @@ ul {
   left: 7%;
   z-index: 4;
 }
-
+ 
 .profile-blue {
   position: absolute;
   max-width: 40%;
@@ -300,7 +321,7 @@ ul {
 }
 
 .profile-orange {
-  position: absolute;
+  position: relative;
   max-width: 40%;
   top: 3px;
   left: 8%;
@@ -329,9 +350,8 @@ ul {
  /* ================================================== */
 
 
-
 iframe {
-  margin-top: -90px;
+  margin-top: -80px;
   margin-bottom: 50px;
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -339,6 +359,29 @@ iframe {
   -moz-box-shadow: 4px 4px 14px #000;
   -webkit-box-shadow: 4px 4px 14px #000;
   box-shadow: 4px 4px 14px #000;
-  width: 85%;
+  width: 80%;
   height: 70vw;
-  } 
+} 
+/* 
+  iframe {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 4px 4px 14px #000;
+    -webkit-box-shadow: 4px 4px 14px #000;
+    box-shadow: 4px 4px 14px #000;
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+    -ms-transform:rotate(20deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
+    }  */
+
+
+
+ /* ================================================== */
+ /*                       Contact                       */
+ /* ================================================== */
+

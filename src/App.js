@@ -25,7 +25,6 @@ function App() {
 
     return (
         <>
-        
         <div className= "home">
         <NavBar />
           <img className="home-img" src={home} alt="Freda"></img>
@@ -48,14 +47,15 @@ function App() {
                     <span>Hello, I'm Freda. Welcome to my portfolio!</span>
                   </div>
               </div>
+
         </div>
         <div className="main-container">
 
           <About />
           <Resume />
           {/* <Projects />
-          <Blog />
-          <Contact />  */}
+          <Blog /> */}
+          <Contact /> 
           {/* <Switch>
             <Route exact path="/about">
               <a name="about"><About /></a>
