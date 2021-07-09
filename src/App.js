@@ -10,11 +10,24 @@ import Blog from './Blog';
 import Contact from './Contact';
 
 
+import profile from './images/portfolio-profile.png';
+import cyan from './images/portfolio-profile-cyan.png';
+import blue from './images/portfolio-profile-blue.png';
+import orange from './images/portfolio-profile-orange.png';
+
+
 function App() {
+
+    // function handleClick(e) {
+    //   e.preventDefault()
+    //   window.location.replace("/about")
+    // }
+
     return (
         <>
-        <NavBar />
+        
         <div className= "home">
+        <NavBar />
           <img className="home-img" src={home} alt="Freda"></img>
               <div className="intro">
                   <div className="welcome"> 
@@ -23,9 +36,13 @@ function App() {
                       React, JavaScript, CSS, HTML, Ruby on Rails and Python.
                       Oh, and did I mention? I'm also a Photoshop enthusiast, too!    
                     </p>
-                    <NavLink exact to="/about">
+                    <a href="#about">
                       <button className="get-started-btn">Learn more</button>
-                    </NavLink>
+                    </a>
+                    {/* <NavLink exact to="/about">
+                      <button className="get-started-btn">Learn more</button>
+                    </NavLink> */}
+                    {/* <button onClick={handleClick} className="get-started-btn">Learn more</button> */}
                   </div>
                   <div className="speech-bubble">
                     <span>Hello, I'm Freda. Welcome to my portfolio!</span>
@@ -33,12 +50,18 @@ function App() {
               </div>
         </div>
         <div className="main-container">
-          <Switch>
+
+          <About />
+          <Resume />
+          {/* <Projects />
+          <Blog />
+          <Contact />  */}
+          {/* <Switch>
             <Route exact path="/about">
-              <About />
+              <a name="about"><About /></a>
             </Route>
             <Route exact path="/resume">
-              <Resume />
+              <a name="resume"><Resume /></a>
             </Route>
             <Route exact path="/projects">
               <Projects />
@@ -49,23 +72,39 @@ function App() {
             <Route exact path="/contact">
               <Contact />
             </Route>
-          </Switch>
+          </Switch> */}
           
+
+          {/* <div className="profile-container">
+            <div className="profile-imgs">
+                <img src={profile} alt="Freda" className="profile-pic"/>
+                <img src={blue} alt="Freda" className="profile-blue"/>
+                <img src={cyan} alt="Freda" className="profile-cyan"/>
+                <img src={orange} alt="Freda" className="profile-orange"/>
+            </div>
+            <div className="content-div">
+                <h1>about</h1>
+                <div>
+                    <p>I'm a fullstack developer based in Toronto, Canada.</p>
+                    <span>I have a creative eye with a passion for web design. 
+                        Many of my personal projects feature small cameos from my Photoshopping hobby. 
+                        When I'm not on the computer, you can find me experimenting on canvases,
+                        hiking some scenic routes, or cuddled up in a corner with a good book. 
+                    </span>
+                </div>
+            </div>
         </div>
-        {/* <div className="content-div">
-        
+
+        <div className="resume-div">
+            <h1>resumé</h1>
+            <iframe src="https://drive.google.com/file/d/1VQn7EjJFB5ZbLk64H7Wm0w6IOB4Jn5VO/preview" allow="autoplay"></iframe>
         </div> */}
-        {/* <div className="content-div">
-          <h1>resumé</h1>
-        </div>
-        <div className="content-div">
-          <h1>projects</h1>
-        </div>
-        <div className="content-div">
-          <h1>blog</h1>
-        </div>
-  */}
-        
+        </div> 
+
+
+
+
+
       </>
     )
 }

@@ -16,11 +16,11 @@ function About() {
                 <h1>about</h1>
                 <div>
                     <p>I'm a fullstack developer based in Toronto, Canada.</p>
-                    <span>I have a creative eye with a passion for web design. 
-                    Many of my personal projects feature small cameos from my Photoshopping hobby.</span>
-                    <span>When I'm not on the computer, you can find me experimenting on canvases,
-                        hiking some scenic routes, or cuddled up in a corner with a good book. 
-                    </span>
+                        <span>I have a creative eye with a passion for web design. 
+                            Many of my personal projects feature small cameos from my Photoshopping hobby. 
+                            When I'm not on the computer, you can find me experimenting on canvases,
+                            hiking some scenic routes, or cuddled up in a corner with a good book. 
+                        </span>
                 </div>
             </div>
         </div>

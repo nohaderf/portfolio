@@ -5,6 +5,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #15165e;
   color: #fff;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -24,6 +25,37 @@ body {
   background: rgb(0, 1, 65);
 }
 
+a:link {
+  /* text-decoration: none; */
+  color: #FFF;
+}
+
+a:visited {
+  /* text-decoration: none; */
+  color:  #FFF;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:active {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+   border: none;
+   outline: none;
+   margin: 0px 10px 0px 0px;
+   padding: 7px;
+   color: #FFF;
+   cursor: pointer;
+ }
+ 
+
  /* ================================================== */
  /*                     SCROLL BAR                     */
  /* ================================================== */
@@ -39,8 +71,9 @@ body::-webkit-scrollbar-track {
  
 body::-webkit-scrollbar-thumb {
   background-color:  rgb(15, 18, 221);
-  
 }
+
+
 
  /* ================================================== */
  /*                    NAV BAR                         */
@@ -57,11 +90,11 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   transition: 0.4s;
   padding: 10px;
-  z-index: 3;
+  z-index: 100;
 }
 
 .logo {
-  max-width: 2%;
+  max-width: 20%;
   margin: 0 10px;
 }
 
@@ -71,12 +104,8 @@ body::-webkit-scrollbar-thumb {
 
 ul {
   list-style-type: none;
-  margin: 0px;
+  margin: 0 0 0 -90px;
   padding: 0px;
-}
-
-ul li {
-  margin-right: 20px;
 }
 
 .nav-bar li {
@@ -104,11 +133,13 @@ ul li {
 .home {
   position: relative;
   text-align: left;
+  overflow: hidden;
   color: #fff;
 }
 
 .home-img {
   max-width: 100%;
+  height: auto;
 }
 
 .intro {
@@ -190,48 +221,39 @@ ul li {
   border-radius: 5px;
 }
 
+.container {
+  position: relative;
+  top: 600px;
+  left: 10%;
+}
+
+.container h1 {
+  position: relative;
+  font-size: 7vw;
+  color:rgb(0, 81, 255);
+}
+
  /* ================================================== */
  /*                       ABOUT                        */
  /* ================================================== */
 
-.main-container {
-  position: relative;
-  margin: 0 0 25px 100px;
-}
-
-.main-container p {
-  font-size: 1.2em;
-}
-
-.main-container img {
-  max-width: 35%;
-}
-
-.text {
-  line-height: 0.5em;
-}
-
-.text span {
-  font-weight: bold;
-}
 
 .profile-container {
   position: relative;
   display: flex;
-  margin-bottom: 500px;
 }
 
 .content-div {
   position: absolute;
   top: 20px;
-  left: 500px;
+  left: 40%;
   width: 50%;
   line-height: 1em;
 }
 
 .content-div h1 {
   position: relative;
-  font-size: 7em;
+  font-size: 7vw;
   color:rgb(0, 81, 255);
 }
 
@@ -244,20 +266,22 @@ ul li {
 .profile-imgs {
   position: relative;
   width: 100%;
-  margin-top: 75px;
+  left: 3%;
 }
 
 .profile-pic {
   position: absolute;
+  max-width: 40%;
   top: -10px;
-  left: 100px;
+  left: 7%;
   z-index: 4;
 }
 
 .profile-blue {
   position: absolute;
+  max-width: 40%;
   top: -10px;
-  left: 90px;
+  left: 6%;
   z-index: 3;
   transform: rotate(2deg);
   animation: shake 5s;
@@ -266,8 +290,9 @@ ul li {
 
 .profile-cyan {
   position: absolute;
+  max-width: 40%;
   top: -15px;
-  left: 105px;
+  left: 8%;
   z-index: 1;
   transform: rotate(-2deg);
   animation: shake 8s;
@@ -276,8 +301,9 @@ ul li {
 
 .profile-orange {
   position: absolute;
+  max-width: 40%;
   top: 3px;
-  left: 107px;
+  left: 8%;
   z-index: 2;
   animation: shake 5s;
   animation-iteration-count: infinite;
@@ -303,38 +329,9 @@ ul li {
  /* ================================================== */
 
 
-button {
-   border: none;
-   outline: none;
-   margin: 0px 10px 0px 0px;
-   padding: 7px;
-   color: #FFF;
-   cursor: pointer;
- }
- 
-/* a:link {
-  text-decoration: none;
-  color: #FFF;
-}
-
-a:visited {
-  text-decoration: none;
-  color:  #FFF;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-a:active {
-  text-decoration: none;
-  outline: none;
-  border: none;
-  cursor: pointer;
-} */
 
 iframe {
-  /* margin-top: 20px; */
+  margin-top: -90px;
   margin-bottom: 50px;
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -342,50 +339,6 @@ iframe {
   -moz-box-shadow: 4px 4px 14px #000;
   -webkit-box-shadow: 4px 4px 14px #000;
   box-shadow: 4px 4px 14px #000;
-  width: 100%;
-  height: 800px;
+  width: 85%;
+  height: 70vw;
   } 
-
-
- /* ================================================== */
- /*                   MAIN CONTAINER                   */
- /* ================================================== */
-
- .main-img-1 {
-  max-width: 100%;
-}
-
- /* ================================================== */
- /*                     SEARCH BAR                     */
- /* ================================================== */
-
- .search-bar {
-  margin: 10px 10px;
-  background: #2f3640;
-  border-radius: 40px;
-}
-
-.search {
-    background: transparent;
-    border: none;
-    color: white;
-}
-
-.search- {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
-textarea:focus, input:focus{
-  outline: none;
-}
-
- /* ================================================== */
- /*                     SEARCH ERROR                   */
- /* ================================================== */
-
- .error {
-  margin: 50px;
-  padding: 0px 0px 100px 0px;
-}
-

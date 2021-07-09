@@ -17,13 +17,22 @@ function NavBar(){
 
     return (
         <div className="nav-bar">
-            <img className="logo" src={logo} alt="FH" />
+            <NavLink exact to="/">
+                <img className="logo" src={logo} alt="FH" />
+            </NavLink>
             <ul>
-                <li><NavLink exact to="/about">about</NavLink></li>
+                {/* <li><NavLink exact to="/about">about</NavLink></li>
                 <li><NavLink exact to="/resume">resumé</NavLink></li>
                 <li><NavLink exact to="/project">projects</NavLink></li>
                 <li><NavLink exact to="/blog">blog</NavLink></li>
-                <li><NavLink exact to="/contact">contact</NavLink></li>
+                <li><NavLink exact to="/contact">contact</NavLink></li> */}
+
+
+                <li><a href="#/about">about</a></li>
+                <li><a href="#/resume">resumé</a></li>
+                <li><a href="#/project">projects</a></li>
+                <li><a href="#/blog">blog</a></li>
+                <li><a href="#/contact">contact</a></li>
                 <li><a href="https://github.com/nohaderf" target="_blank">
                     <i className="fab fa-github"></i>
                 </a></li>

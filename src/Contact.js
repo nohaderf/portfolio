@@ -1,6 +1,6 @@
 function Contact() {
     return (
-        <div className="content-div">
+        <div className="content">
             <h1>contact</h1>
             <p>Feel free to reach out or connect with me!</p>
             <p className="text">
