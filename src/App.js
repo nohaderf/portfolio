@@ -1,8 +1,12 @@
-import React from 'react';
-import { Route, Switch, NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import home from './images/IMG_2211_fade.png';
-import NavBar from './NavBar';
+import NavBar from './components/NavBar';
+// import InfoSection from './components/InfoSection'
+
+
 import About from './About';
 import Resume from './Resume';
 import Projects from './Projects';
@@ -17,6 +21,11 @@ import orange from './images/portfolio-profile-orange.png';
 
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  function toggle(){
+    setIsOpen(!isOpen)
+  }
 
     // function handleClick(e) {
     //   e.preventDefault()
@@ -26,7 +35,10 @@ function App() {
     return (
         <>
         <div className= "home">
-        <NavBar />
+        <Router>
+          <NavBar />
+        </Router>
+        
           <img className="home-img" src={home} alt="Freda"></img>
               <div className="intro">
                   <div className="welcome"> 
@@ -50,26 +62,27 @@ function App() {
 
         </div>
         <div className="main-container">
-
-          <About />
-          <Resume />
+          {/* <InfoSection /> */}
+          <About id="about" />
+          <Resume id="resume" />
           {/* <Projects />
           <Blog /> */}
-          <Contact /> 
+          {/* <Contact />  */}
+
           {/* <Switch>
-            <Route exact path="/about">
+            <Route exact path="/#about">
               <a name="about"><About /></a>
             </Route>
-            <Route exact path="/resume">
+            <Route exact path="/#resume">
               <a name="resume"><Resume /></a>
             </Route>
-            <Route exact path="/projects">
+            <Route exact path="/#projects">
               <Projects />
             </Route>
-            <Route exact path="/blog">
+            <Route exact path="/#blog">
               <Blog />
             </Route>
-            <Route exact path="/contact">
+            <Route exact path="/#contact">
               <Contact />
             </Route>
           </Switch> */}

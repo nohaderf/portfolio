@@ -126,6 +126,24 @@ ul {
   font-weight: 400;
 }
 
+.nav-bar li:active {
+  border-bottom: 3px solid orange;
+}
+
+.mobile-icon {
+  display: none;
+  @media screen and (max-with: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+}
+
  /* ================================================== */
  /*                         HOME                       */
  /* ================================================== */
@@ -355,7 +373,7 @@ iframe {
   -webkit-box-shadow: 4px 4px 14px #000;
   box-shadow: 4px 4px 14px #000;
   width: 80%;
-  height: 70vw;
+  height: 40vw;
 } 
 /* 
   iframe {
@@ -389,5 +407,8 @@ iframe {
 .container-form {
   margin-left: 50px;
   justify-content: space-between;
-  width: 20%;
+  width: 
 }
+
+
+
