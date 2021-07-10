@@ -1,11 +1,11 @@
-import profile from './images/portfolio-profile.png';
-import cyan from './images/portfolio-profile-cyan.png';
-import blue from './images/portfolio-profile-blue.png';
-import orange from './images/portfolio-profile-orange.png';
+import profile from './Images/portfolio-profile.png';
+import cyan from './Images/portfolio-profile-cyan.png';
+import blue from './Images/portfolio-profile-blue.png';
+import orange from './Images/portfolio-profile-orange.png';
 
 function About() {
     return (
-        <div className="profile-container">
+        <div className="profile-container" id="about">
             <div className="profile-imgs">
                 <img src={profile} alt="Freda" className="profile-pic"/>
                 <img src={blue} alt="Freda" className="profile-blue"/>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
+import { Link } from 'react-scroll';
 import { FaBars } from 'react-icons/fa';
 import logo from '../images/fh-logo.png';
 
@@ -19,65 +18,53 @@ function NavBar(){
 
     return (
         <div className="nav-bar">
-            <LinkR exact to="/">
+            <Link to="home">
                 <img className="logo" src={logo} alt="FH" />
-            </LinkR>
+            </Link>
             <ul>
-                {/* <li><NavLink exact to="/about">about</NavLink></li>
-                <li><NavLink exact to="/resume">resumé</NavLink></li>
-                <li><NavLink exact to="/project">projects</NavLink></li>
-                <li><NavLink exact to="/blog">blog</NavLink></li>
-                <li><NavLink exact to="/contact">contact</NavLink></li> */}
-
-
                 <li className="nav-item">
-                    <LinkS
+                    <Link 
                         activeClass="active"
                         to="about"
-                        spy={true}
                         smooth={true}
-                        offset={-70}
+                        offset={-170}
                         duration={500}
-                    > about</LinkS>
+                    > about</Link>
                 </li>
                 <li className="nav-item">
-                    <LinkS
+                    <Link
                         activeClass="active"
                         to="resume"
-                        spy={true}
                         smooth={true}
                         offset={-70}
                         duration={500}
-                    > resumé</LinkS>
+                    > resumé</Link>
                 </li>
                 <li className="nav-item">
-                    <LinkS
+                    <Link
                         activeClass="active"
                         to="projects"
-                        spy={true}
                         smooth={true}
                         offset={-70}
                         duration={500}
-                    > projects</LinkS></li>
+                    > projects</Link></li>
                 <li className="nav-item">
-                    <LinkS
+                    <Link
                         activeClass="active"
                         to="blog"
-                        spy={true}
                         smooth={true}
                         offset={-70}
                         duration={500}
-                    > blog</LinkS>
+                    > blog</Link>
                 </li>
                 <li className="nav-item">
-                    <LinkS
+                    <Link
                         activeClass="active"
                         to="contact"
-                        spy={true}
                         smooth={true}
                         offset={-70}
                         duration={500}
-                    > contact</LinkS>
+                    > contact</Link>
                 </li>
                 <li className="nav-item"><a href="https://github.com/nohaderf" target="_blank">
                     <i className="fab fa-github"></i>

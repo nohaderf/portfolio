@@ -1,6 +1,6 @@
 function Blog() {
     return (
-        <div className="content-div">
+        <div className="container"  id="blog">
           <h1>blog</h1>
         </div>
     )
