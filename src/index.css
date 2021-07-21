@@ -134,7 +134,7 @@ ul {
   font-weight: 400;
 }
 
-.nav-bar li:active {
+.nav-bar li:active{
   border-bottom: 3px solid orange;
 }
 
@@ -382,6 +382,7 @@ iframe {
   box-shadow: 4px 4px 14px #000;
   width: 80%;
   height: 40vw;
+  background-color: transparent;
 } 
 /* 
   iframe {
@@ -413,10 +414,96 @@ iframe {
 }
 
 .container-form {
-  margin-left: 50px;
   justify-content: space-between;
-  width: 
 }
 
+form input {
+  width: 100%;
+}
 
+form textarea {
+  width: 100%;
+}
 
+.contacts-div {
+    margin-left: 50px;
+}
+
+.contact-imgs {
+  position: relative;
+  max-width: 25vw;
+  margin-top: -300px;
+  right: -38vw;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.contact-imgs img {
+  max-width: 75%;
+}
+
+.contact-img {
+  position: absolute;
+  max-width: 40%;
+  top: -10px;
+  left: 7%;
+  z-index: 4;
+}
+ 
+.contact-img-o {
+  position: absolute;
+  max-width: 40%;
+  top: -25px;
+  left: 6%;
+  z-index: 3;
+  transform: rotate(2deg);
+  animation: shake 5s;
+  animation-iteration-count: infinite;
+}
+
+.contact-img-b {
+  position: absolute;
+  max-width: 40%;
+  top: -35px;
+  left: 10%;
+  z-index: 1;
+  transform: rotate(-2deg);
+  animation: shake 8s;
+  animation-iteration-count: infinite;
+}
+
+.contact-img-c {
+  position: relative;
+  max-width: 40%;
+  top: 3px;
+  left: 6%;
+  z-index: 2;
+  animation: shake 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
