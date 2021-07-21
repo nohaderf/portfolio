@@ -426,14 +426,18 @@ form textarea {
 }
 
 .contacts-div {
-    margin-left: 50px;
+    margin: 5px 0 0 100px;
+    padding: 10px 10px 0px 50px;
+    /* max-width: 350px; */
+    height: 13vw;
+    background-color: rgb(3, 2, 83);
 }
 
 .contact-imgs {
   position: relative;
   max-width: 25vw;
   margin-top: -300px;
-  right: -38vw;
+  right: -30vw;
   animation-duration: 3s;
   animation-name: slidein;
 }
