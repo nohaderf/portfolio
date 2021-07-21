@@ -3,7 +3,7 @@ import cyan from './Images/portfolio-profile-cyan.png';
 import blue from './Images/portfolio-profile-blue.png';
 import orange from './Images/portfolio-profile-orange.png';
 
-function About() {
+export default function About() {
     return (
         <div className="profile-container" id="about">
             <div className="profile-imgs">
@@ -28,7 +28,5 @@ function About() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
-
-export default About;

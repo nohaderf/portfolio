@@ -47,7 +47,7 @@ a:active {
 button {
    border: none;
    outline: none;
-   margin: 40px 0;
+   margin: 10px 0;
    background-color: orange;
    font-weight: bold;
    text-transform: uppercase;
@@ -278,6 +278,9 @@ ul {
  /*                       ABOUT                        */
  /* ================================================== */
 
+.learn-more-btn {
+  margin: 40px 0;
+}
 
 .profile-container {
   position: relative;
@@ -287,7 +290,7 @@ ul {
 
 .content-div {
   position: absolute;
-  top: 10px;
+  top: 0px;
   left: 50%;
   width: 40%;
   line-height: 1em;
@@ -365,6 +368,11 @@ ul {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+@media screen and (max-width: 1250px) {
+  .profile-imgs {
+    display: none;
+  }
+}
 
  /* ================================================== */
  /*                       RESUME                       */
@@ -401,7 +409,30 @@ iframe {
     filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
     }  */
 
+ /* ================================================== */
+ /*                       BLOG                        */
+ /* ================================================== */
 
+ .blogs-div { 
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   max-width: 80%;
+ }
+
+ .blog-thumbnail {
+  width: 25vw;
+  height: 18vw;
+  object-fit: cover;
+  object-position: 55% 0;
+  margin-top: 20px;
+}
+
+.blog-title {
+  width: 25vw;
+  font-size: 0.9em;
+  text-transform: lowercase;
+}
 
  /* ================================================== */
  /*                       Contact                       */
@@ -415,20 +446,52 @@ iframe {
 
 .container-form {
   justify-content: space-between;
+  width: 30vw;
 }
 
 form input {
   width: 100%;
+  height: 2vw;
+  margin-bottom: 10px;
 }
 
 form textarea {
   width: 100%;
+  height: 10vw;
+}
+
+input, textarea {
+  outline: none;
+  border: 0;
+  background-color : rgb(3, 2, 83); 
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.692);
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.692);  
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.692);  
+}
+
+textarea:-ms-textarea-placeholder {
+  color: rgba(255, 255, 255, 0.692);  
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.692);  
 }
 
 .contacts-div {
-    margin: 5px 0 0 100px;
+    margin: 19px 0 0 100px;
     padding: 10px 10px 0px 50px;
-    /* max-width: 350px; */
     height: 13vw;
     background-color: rgb(3, 2, 83);
 }
@@ -509,5 +572,11 @@ form textarea {
   to {
     margin-left: 0%;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .contact-imgs {
+    display: none;
   }
 }

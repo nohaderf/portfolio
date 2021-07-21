@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import { FaBars } from 'react-icons/fa';
 import logo from '../images/fh-logo.png';
 
-function NavBar(){
+export default function NavBar(){
     const [navBar, setNavBar] = useState(false)
 
     function changeBackground() {
@@ -23,6 +23,7 @@ function NavBar(){
                     <img className="logo" src={logo} alt="FH" />
                 </Link>
                 <ul>
+                    <li><strong>[ FREDA HON ]</strong></li>
                     <li className="nav-item">
                         <Link 
                             activeClass="active"
@@ -32,7 +33,7 @@ function NavBar(){
                             duration={500}
                         > about</Link>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <Link
                             activeClass="active"
                             to="resume"
@@ -40,7 +41,7 @@ function NavBar(){
                             offset={-70}
                             duration={500}
                         > resumé</Link>
-                    </li>
+                    </li> */}
                     <li className="nav-item">
                         <Link
                             activeClass="active"
@@ -92,7 +93,5 @@ function NavBar(){
             </div>
             
         </div>
-    )
+    );
 }
-
-export default NavBar;

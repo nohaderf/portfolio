@@ -6,12 +6,12 @@ import home from './images/IMG_2211_fade.png';
 import NavBar from './components/NavBar';
 
 import About from './components/About/About';
-import Resume from './components/Resume/Resume';
+// import Resume from './components/Resume/Resume';
 import Projects from './components/Projects/Projects';
-import Blog from './components/Blog/Blog';
+import BlogsList from './components/Blog/BlogsList';
 import Contact from './components/Contact/Contact';
 
-function App() {
+export default function App() {
   const [isOpen, setIsOpen] = useState(false)
 
   function toggle(){
@@ -45,7 +45,7 @@ function App() {
                         offset={-170}
                         duration={500}
                     >
-                      <button className="get-started-btn">Learn more</button>
+                      <button className="learn-more-btn">Learn more</button>
                     </Link>
                   </div>
                   <div className="speech-bubble">
@@ -56,13 +56,11 @@ function App() {
         </div>
         <div className="main-container">
           <About />
-          <Resume />
+          {/* <Resume /> */}
           <Projects />
-          <Blog />
+          <BlogsList />
           <Contact />
         </div> 
       </>
-    )
+    );
 }
-
-export default App;
