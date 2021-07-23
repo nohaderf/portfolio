@@ -393,6 +393,39 @@ iframe {
  /*                       BLOG                        */
  /* ================================================== */
 
+ .projects-div { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  max-width: 80%;
+}
+
+.project h2 {
+  text-transform: uppercase;
+}
+
+.project-thumbnail{
+ width: 25vw;
+ height: 18vw;
+ object-fit: cover;
+ object-position: 55% 0;
+}
+
+.project {
+  margin-right: 10px;
+}
+
+.project-desc {
+ width: 25vw;
+ font-size: 0.9em;
+ text-transform: lowercase;
+}
+
+
+ /* ================================================== */
+ /*                       BLOG                        */
+ /* ================================================== */
+
  .blogs-div { 
    display: flex;
    flex-wrap: wrap;
