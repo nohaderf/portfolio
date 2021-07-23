@@ -10,7 +10,6 @@ function Contact() {
             <h1>contact me</h1>
             <div className="container-div">
                 <div className="container-form">
-                    {/* <h2>Inquiry Form</h2> */}
                     <form 
                         action="mailto:freda.hon@gmail.com"
                         method="POST"

@@ -15,7 +15,7 @@ export default function BlogsList() {
     })
 
     return (
-        <div className="container"  id="blog">
+        <div className="container" id="blog">
           <h1>blog</h1>
           <div className="blogs-div">
             {blog}

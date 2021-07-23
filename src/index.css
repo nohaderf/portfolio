@@ -157,15 +157,10 @@ ul {
  /* ================================================== */
 
 .home {
-  /* position: relative;
-  text-align: left;
-  overflow: hidden;
-  color: #fff; */
-  /* display: flex;
-  text-align: left; */
+  margin-bottom: -70px;
 }
 
-.home-img {
+ .home-img {
   max-width: 100%;
   height: auto;
 }
@@ -260,6 +255,12 @@ ul {
   }
 }
 
+.learn-more-btn {
+  margin: 40px 0;
+}
+
+
+/* ---------------- */
 .container {
   position: relative;
   left: 10%;
@@ -274,50 +275,30 @@ ul {
 .container span {
   font-weight: bold;
 }
+
  /* ================================================== */
  /*                       ABOUT                        */
  /* ================================================== */
 
-.learn-more-btn {
-  margin: 40px 0;
-}
-
-.profile-container {
-  position: relative;
+.about-div {
+  max-width: 100%;
   display: flex;
-  margin-top: 25px;
-}
+  justify-content: space-evenly;
+ }
 
-.content-div {
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  width: 40%;
-  line-height: 1em;
-}
+ .about-content {
+   max-width: 40%;
+   margin-bottom: 150px;
+ }
 
-.content-div h1 {
-  position: relative;
-  font-size: 7vw;
-  color:rgb(0, 81, 255);
-}
-
-.content-div div {
-  position: relative;
-  top: -20px;
-  line-height: 1.2em;
-}
-
-.profile-imgs {
-  position: relative;
-  width: 200%;
-  left: 10%;
-}
+ .about-content h1 { 
+  margin: 150px 0 -15px 0;
+ }
 
 .profile-pic {
   position: absolute;
   max-width: 40%;
-  top: -10px;
+  top: 130px;
   left: 7%;
   z-index: 4;
 }
@@ -325,7 +306,7 @@ ul {
 .profile-blue {
   position: absolute;
   max-width: 40%;
-  top: -10px;
+  top: 140px;
   left: 6%;
   z-index: 3;
   transform: rotate(2deg);
@@ -336,7 +317,7 @@ ul {
 .profile-cyan {
   position: absolute;
   max-width: 40%;
-  top: -15px;
+  top: 140px;
   left: 8%;
   z-index: 1;
   transform: rotate(-2deg);
@@ -345,9 +326,9 @@ ul {
 }
 
 .profile-orange {
-  position: relative;
+  position: absolute;
   max-width: 40%;
-  top: 3px;
+  top: 125px;
   left: 8%;
   z-index: 2;
   animation: shake 5s;
@@ -368,7 +349,7 @@ ul {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1350px) {
   .profile-imgs {
     display: none;
   }
@@ -490,17 +471,18 @@ input::placeholder {
 }
 
 .contacts-div {
-    margin: 19px 0 0 100px;
-    padding: 10px 10px 0px 50px;
-    height: 13vw;
-    background-color: rgb(3, 2, 83);
+    margin: -15px 0 0 100px;
+    padding-left: 10px;
+    max-width: 30%;
+    height: 50%;
+    /* background-color: rgb(3, 2, 83); */
 }
 
 .contact-imgs {
   position: relative;
   max-width: 25vw;
   margin-top: -300px;
-  right: -30vw;
+  right: -33vw;
   animation-duration: 3s;
   animation-name: slidein;
 }
@@ -577,6 +559,12 @@ input::placeholder {
 
 @media screen and (max-width: 1250px) {
   .contact-imgs {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .contacts-div {
     display: none;
   }
 }

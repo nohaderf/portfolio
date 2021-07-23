@@ -23,7 +23,11 @@ export default function NavBar(){
                     <img className="logo" src={logo} alt="FH" />
                 </Link>
                 <ul>
-                    <li><strong>[ FREDA HON ]</strong></li>
+                    <li>
+                        <Link to="home">
+                            <strong>[ FREDA HON ]</strong>
+                        </Link>
+                    </li>
                     <li className="nav-item">
                         <Link 
                             activeClass="active"

@@ -18,11 +18,6 @@ export default function App() {
     setIsOpen(!isOpen)
   }
 
-    // function handleClick(e) {
-    //   e.preventDefault()
-    //   window.location.replace("/about")
-    // }
-
     return (
         <>
         <div className="home" id="home">
