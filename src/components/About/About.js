@@ -23,10 +23,10 @@ export default function About() {
                     <p>I am well versed in JavaScript, ReactJS, HTML, CSS, postgreSQL, Python and Ruby on Rails. 
                         I possess strong skills in Adobe Photoshop and have experience with converting images to HTML/CSS layouts. Additionally, I am adept in component performance optimization, scalable software design, designing and translating wireframes, and building reusable cross platform components.
                     </p>
-                    <span>
+                    <p>
                         When I'm not on the computer, you can find me experimenting on canvases,
                         hiking some scenic routes, or cuddled up in a corner with a good book. 
-                    </span>
+                    </p>
                 </div>
             </div>
         </div>

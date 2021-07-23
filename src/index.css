@@ -160,7 +160,7 @@ ul {
   margin-bottom: -70px;
 }
 
- .home-img {
+.home-img {
   max-width: 100%;
   height: auto;
 }
@@ -260,7 +260,6 @@ ul {
 }
 
 
-/* ---------------- */
 .container {
   position: relative;
   left: 10%;
@@ -292,22 +291,22 @@ ul {
  }
 
  .about-content h1 { 
-  margin: 150px 0 -15px 0;
+  margin: 80px 0 -10px 0;
  }
 
 .profile-pic {
   position: absolute;
   max-width: 40%;
-  top: 130px;
-  left: 7%;
+  top: 80px;
+  left: 5%;
   z-index: 4;
 }
  
 .profile-blue {
   position: absolute;
   max-width: 40%;
-  top: 140px;
-  left: 6%;
+  top: 90px;
+  left: 4%;
   z-index: 3;
   transform: rotate(2deg);
   animation: shake 5s;
@@ -317,8 +316,8 @@ ul {
 .profile-cyan {
   position: absolute;
   max-width: 40%;
-  top: 140px;
-  left: 8%;
+  top: 105px;
+  left: 5%;
   z-index: 1;
   transform: rotate(-2deg);
   animation: shake 8s;
@@ -328,8 +327,8 @@ ul {
 .profile-orange {
   position: absolute;
   max-width: 40%;
-  top: 125px;
-  left: 8%;
+  top: 80px;
+  left: 6%;
   z-index: 2;
   animation: shake 5s;
   animation-iteration-count: infinite;
