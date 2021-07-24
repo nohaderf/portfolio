@@ -13,7 +13,7 @@ function Contact() {
                     <form 
                         action="mailto:freda.hon@gmail.com"
                         method="POST"
-                        enctype="multipart/form-data"
+                        encType="multipart/form-data"
                         name="EmailForm"
                     >
                         <input type="text" placeholder="name"></input><br></br>
@@ -27,7 +27,7 @@ function Contact() {
                     <div>
                     <p>Feel free to reach out or connect with me!</p>
                     <p className="text">
-                    <span>E-mail <i class="fas fa-envelope"></i>:</span> freda.hon@gmail.com</p>
+                    <span>E-mail <i className="fas fa-envelope"></i>:</span> freda.hon@gmail.com</p>
                     <p className="text">
                     <span>LinkedIn <i className="fab fa-linkedin"></i>:</span> <a href="https://www.linkedin.com/in/freda-hon/">freda-hon</a></p>
                     <p className="text">

@@ -138,19 +138,20 @@ ul {
   border-bottom: 3px solid orange;
 }
 
-.mobile-icon {
-  display: none;
-  @media screen and (max-with: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #fff;
+@media screen and (max-width: 750px) {
+  .nav-bar ul {
+    display: none;
   }
 }
+
+span.hamburger {
+  display: none;
+  padding: 10px;
+  margin: 2px;
+  background-color: grey;
+}
+
+
 
  /* ================================================== */
  /*                         HOME                       */
@@ -286,7 +287,7 @@ ul {
  }
 
  .about-content {
-   max-width: 40%;
+   width: 40vw;
    margin-bottom: 150px;
  }
 
@@ -348,9 +349,16 @@ ul {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1280px) {
   .profile-imgs {
     display: none;
+  }
+  .about-div {
+    justify-content: left;
+  }
+  .about-content {
+    width: 80%;
+    margin-bottom: 0;
   }
 }
 

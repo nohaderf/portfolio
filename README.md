@@ -1,7 +1,6 @@
 npm install react-scroll
 npm install react-router-dom
 npm install react-icons --save
-npm install --save styled-components
 
 
 # Getting Started with Create React App

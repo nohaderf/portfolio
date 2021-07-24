@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Link } from 'react-scroll';
 
@@ -12,12 +12,6 @@ import BlogsList from './components/Blog/BlogsList';
 import Contact from './components/Contact/Contact';
 
 export default function App() {
-  const [isOpen, setIsOpen] = useState(false)
-
-  function toggle(){
-    setIsOpen(!isOpen)
-  }
-
     return (
         <>
         <div className="home" id="home">

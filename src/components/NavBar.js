@@ -1,20 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { FaBars } from 'react-icons/fa';
 import logo from '../images/fh-logo.png';
+import HamburgerNav from './HamburgerNav';
 
 export default function NavBar(){
-    const [navBar, setNavBar] = useState(false)
+    const [width, setWidth] = useState();
+    const [isShow, setIsShow] = useState(false);
 
-    function changeBackground() {
-        if (window.scrollY >= 40) {
-            setNavBar(true)
-        } else {
-            setNavBar(false)
+    useEffect(() => {
+        setWidth(window.innerWidth);            
+        if (width < 750) {
+            setIsShow(true)
+        } else if (width > 750) {
+            setIsShow(false)
+        }
+    }, [])
+
+    window.addEventListener('resize', handleResize);
+
+    function handleResize(){
+        setWidth(window.innerWidth);            
+        if (width < 750) {
+            setIsShow(true)
+        } else if (width > 750) {
+            setIsShow(false)
         }
     }
-
-    window.addEventListener("scroll", changeBackground)
 
     return (
         <div className="nav-bar">
@@ -77,25 +88,25 @@ export default function NavBar(){
 
             <div className="right">
                 <ul>
-                    <li className="nav-item"><a href="https://github.com/nohaderf" target="_blank">
+                    <li className="nav-item"><a href="https://github.com/nohaderf" target="_blank" rel="noreferrer">
                         <i className="fab fa-github"></i>
                     </a></li>
-                    <li><a href="https://www.linkedin.com/in/freda-hon/" target="_blank">
+                    <li><a href="https://www.linkedin.com/in/freda-hon/" target="_blank" rel="noreferrer">
                     <i className="fab fa-linkedin"></i>
                     </a></li>
-                    <li><a href="https://medium.com/@freda.hon" target="_blank">
+                    <li><a href="https://medium.com/@freda.hon" target="_blank" rel="noreferrer">
                     <i className="fab fa-medium"></i>
                     </a></li> 
-                    <li><a href="mailto:freda.hon@gmail.com" target="_blank">
-                    <i class="fas fa-envelope"></i>
+                    <li><a href="mailto:freda.hon@gmail.com" target="_blank" rel="noreferrer">
+                    <i className="fas fa-envelope"></i>
                     </a></li>
                 </ul>
+                { isShow && <HamburgerNav /> }
             </div>
 
-            <div className="mobile-icon">
+            {/* <div className="mobile-icon">
                 <FaBars />
-            </div>
-            
+            </div> */}
         </div>
     );
 }

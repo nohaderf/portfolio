@@ -1,18 +1,24 @@
-import profile from './Images/portfolio-profile.png';
-import cyan from './Images/portfolio-profile-cyan.png';
-import blue from './Images/portfolio-profile-blue.png';
-import orange from './Images/portfolio-profile-orange.png';
+import React, { useState } from 'react';
+import ProfileImgs from './ProfileImgs';
 
 export default function About() {
+    const [width, setWidth] = useState();
+    const [isShow, setIsShow] = useState(true);
+
+    window.addEventListener('resize', handleResize);
+
+    function handleResize(){
+        setWidth(window.innerWidth);            
+        if (width < 1250) {
+            setIsShow(false)
+        } else if (width > 1250) {
+            setIsShow(true)
+        }
+    }
     return (
         <div className="container" id="about">
             <div className="about-div">
-                <div className="profile-imgs">
-                    <img src={profile} alt="Freda" className="profile-pic"/>
-                    <img src={blue} alt="Freda" className="profile-blue"/>
-                    <img src={cyan} alt="Freda" className="profile-cyan"/>
-                    <img src={orange} alt="Freda" className="profile-orange"/>
-                </div>
+                { isShow && <ProfileImgs /> }
                 <div className="about-content">
                     <h1>about</h1>
                     <p>I'm a full stack developer, based in Toronto, who left medicine to pursue a creative path in software development.
