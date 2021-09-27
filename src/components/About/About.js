@@ -24,7 +24,7 @@ export default function About() {
         } else if (width > 1250) {
             setIsShow(true)
         }
-    }, [window.innerWidth])
+    }, [width])
 
     function handleShowBook(){
         setShowBook(!showBook);
@@ -33,7 +33,7 @@ export default function About() {
     return (
         <div className="container" id="about">
             <div className="about-div">
-                { isShow ? <ProfileImgs /> : <p></p>}
+                { isShow && <ProfileImgs /> }
                 <div className="about-content">
                     <h1>about</h1>
                     <p>I'm a full stack developer, based in Toronto, well versed in JavaScript, ReactJS, HTML, CSS, postgreSQL, Python and Ruby on Rails. 
