@@ -23,7 +23,7 @@ export default function Projects() {
               <a href="https://userdatacc.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <img src="https://i.imgur.com/tFmfI2m.png" alt="life-league" className="project-thumbnail"/>
               </a>
-              <div className="project-desc">Simple application that displays user data in table and modal format.</div>
+              <div className="project-desc">a simple application that displays user data in table and modal format.</div>
             </div>
         </div>
 
