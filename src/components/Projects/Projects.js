@@ -9,15 +9,20 @@ export default function Projects() {
               <img src="https://i.imgur.com/927YK49.png" alt="life-league" className="project-thumbnail"/>
               <div className="project-desc">A competitive goal management app where users challenge their friends to complete goals and hold each other accountable.</div>
             </div>
-
             <div className="project">
               <h2>Krunch</h2>
               <a href="https://krunch.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <img src="https://d33wubrfki0l68.cloudfront.net/602f02201639380008f0359f/screenshot.png" alt="life-league" className="project-thumbnail"/>
+                <img src="https://d33wubrfki0l68.cloudfront.net/602f02201639380008f0359f/screenshot.png" alt="Krunch" className="project-thumbnail"/>
               </a>
               <div className="project-desc">An app that provides a vast exercise-guide library and allow users to plan their workouts and track their progress.</div>
             </div>
-            
+            <div className="project">
+              <h2>bookclub</h2>
+              <a href="https://krunch.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <img src="https://i.imgur.com/0aoxtV8.png" alt="bookclub" className="project-thumbnail"/>
+              </a>
+              <div className="project-desc">A Javascript application that allow users to add books to a shelf and discuss the book with other users.</div>
+            </div>
             <div className="project">
               <h2>User Data</h2>
               <a href="https://userdatacc.netlify.app/" target="_blank" rel="noopener noreferrer">
