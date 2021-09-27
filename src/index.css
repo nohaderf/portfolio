@@ -408,15 +408,19 @@ iframe {
  .projects-div { 
   display: flex;
   flex-wrap: wrap;
-  justify-content: right;
-  max-width: 80%;
+  justify-content: left;
+  max-width: 100%;
   margin-bottom: 200px;
+  
 }
 
 .project h2 {
   text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 2px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 800;
 }
 
 .project-thumbnail{
@@ -427,15 +431,17 @@ iframe {
 }
 
 .project {
-  margin-right: 10px;
+
+  margin: 0 10px 20px 0;
+  padding: 10px;
+  background-color:rgb(0, 1, 65);
+  border-radius: 5px;
 }
 
 .project-desc {
  width: 25vw;
- font-size: 0.9em;
- text-transform: lowercase;
+ padding-top: 10px;
 }
-
 
  /* ================================================== */
  /*                       BLOG                        */

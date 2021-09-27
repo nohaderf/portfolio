@@ -23,9 +23,9 @@ export default function App() {
               <div className="intro">
                   <div className="welcome"> 
                     <h1>Fullstack Developer</h1>
-                    <p>Welcome! I'm a fullstack software developer well versed in 
+                    <p>Welcome! I'm a fullstack software developer with experience in 
                       React, JavaScript, CSS, HTML, Ruby on Rails and Python.
-                      Oh, and did I mention? I'm also a Photoshop enthusiast, too!    
+                      Oh, and did I mention? I'm familiar with Adobe Photoshop, too!    
                     </p>
                     <Link 
                         activeClass="active"
