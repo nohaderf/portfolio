@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Link } from 'react-scroll';
 
-// import home from './images/IMG_2211_fade.png';
 import NavBar from './components/NavBar';
 
 import About from './components/About/About';
@@ -20,7 +19,7 @@ export default function App() {
           <NavBar />
         </Router>
         
-          <img className="home-img" src="https://i.imgur.com/LW78lpn.jpg" alt="Freda"></img>
+          <img className="home-img" src="https://i.imgur.com/eSxeEq2.jpg" alt="Freda"></img>
               <div className="intro">
                   <div className="welcome"> 
                     <h1>Fullstack Developer</h1>
