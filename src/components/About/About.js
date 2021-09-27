@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProfileImgs from './ProfileImgs';
 
 export default function About() {
@@ -6,16 +6,25 @@ export default function About() {
     const [isShow, setIsShow] = useState(true);
     const [showBook, setShowBook] = useState(false);
 
-    window.addEventListener('resize', handleResize);
+    // window.addEventListener('resize', handleResize);
 
-    function handleResize(){
+    // function handleResize(){
+    //     setWidth(window.innerWidth);            
+    //     if (width < 1250) {
+    //         setIsShow(false)
+    //     } else if (width > 1250) {
+    //         setIsShow(true)
+    //     }
+    // }
+
+    useEffect(() => {
         setWidth(window.innerWidth);            
         if (width < 1250) {
             setIsShow(false)
         } else if (width > 1250) {
             setIsShow(true)
         }
-    }
+    }, [window.innerWidth])
 
     function handleShowBook(){
         setShowBook(!showBook);
@@ -24,7 +33,7 @@ export default function About() {
     return (
         <div className="container" id="about">
             <div className="about-div">
-                { isShow && <ProfileImgs /> }
+                { isShow ? <ProfileImgs /> : <p></p>}
                 <div className="about-content">
                     <h1>about</h1>
                     <p>I'm a full stack developer, based in Toronto, well versed in JavaScript, ReactJS, HTML, CSS, postgreSQL, Python and Ruby on Rails. 

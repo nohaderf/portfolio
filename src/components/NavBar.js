@@ -14,18 +14,7 @@ export default function NavBar(){
         } else if (width > 750) {
             setIsShow(false)
         }
-    }, [width])
-
-    window.addEventListener('resize', handleResize);
-
-    function handleResize(){
-        setWidth(window.innerWidth);            
-        if (width < 750) {
-            setIsShow(true)
-        } else if (width > 750) {
-            setIsShow(false)
-        }
-    }
+    }, [window.innerWidth])
 
     return (
         <div className="nav-bar">
