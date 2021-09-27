@@ -19,7 +19,7 @@ export default function Projects() {
             <div className="project">
               <h2>bookclub</h2>
               <a href="https://krunch.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <img src="https://i.imgur.com/0aoxtV8.png" alt="bookclub" className="project-thumbnail"/>
+                <img src="https://i.imgur.com/IpaLkN3.png" alt="bookclub" className="project-thumbnail"/>
               </a>
               <div className="project-desc">A Javascript application that allow users to add books to a shelf and discuss the book with other users.</div>
             </div>
