@@ -12,6 +12,7 @@ import BlogsList from './components/Blog/BlogsList';
 import Contact from './components/Contact/Contact';
 
 export default function App() {
+  console.log('Hello! This is Freda. Thanks for stopping by!')
     return (
         <>
         <div className="home" id="home">
