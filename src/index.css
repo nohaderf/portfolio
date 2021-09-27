@@ -411,13 +411,12 @@ iframe {
   justify-content: left;
   max-width: 100%;
   margin-bottom: 200px;
-  
 }
 
 .project h2 {
   text-transform: uppercase;
   margin-top: 10px;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 1.2em;
   font-weight: 800;
@@ -431,11 +430,14 @@ iframe {
 }
 
 .project {
-
   margin: 0 10px 20px 0;
   padding: 10px;
   background-color:rgb(0, 1, 65);
   border-radius: 5px;
+}
+
+.project:hover {
+  background-color:rgb(0, 81, 255);
 }
 
 .project-desc {
@@ -461,6 +463,7 @@ iframe {
   object-fit: cover;
   object-position: 55% 0;
   margin-top: 20px;
+  /* border-radius: 5px; */
 }
 
 .blog-title {
