@@ -291,6 +291,10 @@ span.hamburger {
    margin-bottom: 150px;
  }
 
+ .book {
+   background-color:rgb(0, 81, 255);
+ }
+
  .about-content h1 { 
   margin: 80px 0 -10px 0;
  }
