@@ -9,7 +9,7 @@ function Contact() {
         <div  className="container" id="contact">
             <h1>contact me</h1>
             <div className="container-div">
-                <div className="container-form">
+                {/* <div className="container-form">
                     <form 
                         action="mailto:freda.hon@gmail.com"
                         method="POST"
@@ -21,7 +21,7 @@ function Contact() {
                         <textarea placeholder="type your message here..."></textarea><br></br>           
                         <button type="submit" value="Submit">Send</button>
                     </form> 
-                </div>
+                </div> */}
 
                 <div className="contacts-div">
                     <div>
@@ -34,13 +34,13 @@ function Contact() {
                     <span>Medium <i className="fab fa-medium"></i>:</span> <a href="https://medium.com/@freda.hon">@freda.hon</a></p>
                 </div>
                 
+            </div>
                 <div className="contact-imgs">
                     <img src={contactImage} alt="Freda" className="contact-img"></img>
                     <img src={contactImageO} alt="Freda" className="contact-img-o"></img>
                     <img src={contactImageB} alt="Freda" className="contact-img-b"></img>
                     <img src={contactImageC} alt="Freda" className="contact-img-c"></img>
                 </div>
-            </div>
         </div>
       </div>
     )

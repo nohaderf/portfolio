@@ -13,7 +13,7 @@ export default function Projects() {
             <div className="project">
               <h2>Krunch</h2>
               <a href="https://krunch.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <img src="https://d33wubrfki0l68.cloudfront.net/602f02201639380008f0359f/screenshot.png" alt="life-league"className="project-thumbnail"/>
+                <img src="https://d33wubrfki0l68.cloudfront.net/602f02201639380008f0359f/screenshot.png" alt="life-league" className="project-thumbnail"/>
               </a>
               <div className="project-desc">An app that provides a vast exercise-guide library and allow users to plan their workouts and track their progress.</div>
             </div>

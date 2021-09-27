@@ -22,8 +22,7 @@ export default function About() {
                 <div className="about-content">
                     <h1>about</h1>
                     <p>I'm a full stack developer, based in Toronto, who left medicine to pursue a creative path in software development.
-                        While it is an uncommon career change, web design has always been a passion of mine, 
-                        and I believe that software development can bring more change and impact in the world 
+                        While it is an uncommon career change, web design has always been a passion of mine.I believe that software development can bring more change and impact in the world 
                         than my previous role in medicine.
                     </p>
                     <p>I am well versed in JavaScript, ReactJS, HTML, CSS, postgreSQL, Python and Ruby on Rails. 

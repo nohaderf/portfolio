@@ -398,7 +398,7 @@ iframe {
     }  */
 
  /* ================================================== */
- /*                       BLOG                        */
+ /*                    PROJECTS                        */
  /* ================================================== */
 
  .projects-div { 
@@ -406,10 +406,13 @@ iframe {
   flex-wrap: wrap;
   justify-content: right;
   max-width: 80%;
+  margin-bottom: 200px;
 }
 
 .project h2 {
   text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 2px;
 }
 
 .project-thumbnail{
@@ -439,6 +442,7 @@ iframe {
    flex-wrap: wrap;
    justify-content: space-between;
    max-width: 80%;
+   margin-bottom: 100px;
  }
 
  .blog-thumbnail {
@@ -465,10 +469,10 @@ iframe {
   justify-content: space-around;  */
 }
 
-.container-form {
+/* .container-form {
   justify-content: space-between;
   width: 30vw;
-}
+} */
 
 form input {
   width: 100%;
@@ -511,10 +515,11 @@ input::placeholder {
 }
 
 .contacts-div {
-    margin: -15px 0 0 100px;
+  margin: -50px 0 0 10px;
+    /* margin: -15px 0 0 100px;
     padding-left: 10px;
     max-width: 30%;
-    height: 50%;
+    height: 50%; */
     /* background-color: rgb(3, 2, 83); */
 }
 
@@ -522,7 +527,7 @@ input::placeholder {
   position: relative;
   max-width: 25vw;
   margin-top: -300px;
-  right: -33vw;
+  left: 47vw;
   animation-duration: 3s;
   animation-name: slidein;
 }
