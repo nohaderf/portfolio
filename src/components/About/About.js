@@ -44,7 +44,7 @@ export default function About() {
                         hiking some scenic routes, or cuddled up in a corner with a good book. Ask me what I'm currently reading!
                     </p>
                     <button className="book" onClick={handleShowBook}>What are you reading ?</button>
-                    { showBook ? <p>An oldie, but goldie, <em>The Girl with the Dragon Tattoo</em></p> : null }
+                    { showBook ? <p className="read"><em>The Empire of Pain</em>, the riveting tale of how the Sackler Dynasty started the opioid crisis in America.</p> : null }
                 </div>
             </div>
         </div>

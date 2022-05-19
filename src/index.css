@@ -299,6 +299,10 @@ span.hamburger {
   margin: 80px 0 -10px 0;
  }
 
+ .read {
+   margin-top: 5px;
+ }
+
 .profile-pic {
   position: absolute;
   max-width: 40%;

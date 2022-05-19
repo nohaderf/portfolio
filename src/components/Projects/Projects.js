@@ -3,6 +3,15 @@ export default function Projects() {
         <div className="container" id="projects">
           <h1>projects</h1>
           <div className="projects-div">
+            <div className="project">
+              <h2>Whatsapp Clone</h2>
+              <a href="https://fredas-whatsapp-clone.netlify.app" target="_blank" rel="noopener noreferrer">
+                <img src="	https://d33wubrfki0l68.cloudfront.net/622a511648791728ad188bd8/screenshot_2022-03-10-19-28-15-0000.png" alt="Whatsapp-clone" className="project-thumbnail"/>
+              </a>
+              <div className="project-desc">A fun recreation of an app we all know, Whatsapp!</div>
+            </div>
+
+            
 
             <div className="project">
               <h2>Life League</h2>
