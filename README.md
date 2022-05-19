@@ -1,6 +1,10 @@
 # Freda Hon's Portfolio
 
-Hello! Thank you for being here. This is my personal portfolio built on React.
+Hello! Thank you for being here. This is my personal portfolio to showcase my past projects, as well as articles I have published on Medium
+
+## Technologies
+
+This application was built with ReactJS.
 
 ## Getting Started
 
